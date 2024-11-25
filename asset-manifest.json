@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Simfin_capitals/static/css/main.e9e64655.css",
+    "main.js": "/Simfin_capitals/static/js/main.b91fe5f7.js",
+    "static/js/453.ad6eb26e.chunk.js": "/Simfin_capitals/static/js/453.ad6eb26e.chunk.js",
+    "static/media/director1.jpeg": "/Simfin_capitals/static/media/director1.59fddcfed0ef9304923c.jpeg",
+    "static/media/Currency.jpeg": "/Simfin_capitals/static/media/Currency.f66cf8947d55d550d07d.jpeg",
+    "static/media/director2.png": "/Simfin_capitals/static/media/director2.926eb3ed8076c126f4ff.png",
+    "static/media/image_2.jpeg": "/Simfin_capitals/static/media/image_2.92789f6ed9df16122900.jpeg",
+    "static/media/Mutual_fund.jpeg": "/Simfin_capitals/static/media/Mutual_fund.2bd3f585c59e1c6ffca7.jpeg",
+    "static/media/Insurance.jpeg": "/Simfin_capitals/static/media/Insurance.3a1d1d44fdcee47336cd.jpeg",
+    "static/media/Forex.jpeg": "/Simfin_capitals/static/media/Forex.188e7e6268203427b2eb.jpeg",
+    "static/media/image_3.jpeg": "/Simfin_capitals/static/media/image_3.0dd6279c0a963476d52c.jpeg",
+    "static/media/IPO.jpeg": "/Simfin_capitals/static/media/IPO.2ed6439b5d261371cd1e.jpeg",
+    "static/media/Commodities.jpeg": "/Simfin_capitals/static/media/Commodities.3385d4644061e91a7de7.jpeg",
+    "static/media/image_1.jpeg": "/Simfin_capitals/static/media/image_1.3bfd0d28cf321aab1570.jpeg",
+    "static/media/Money_transfer.jpeg": "/Simfin_capitals/static/media/Money_transfer.e584af686b8af24c8288.jpeg",
+    "static/media/equity.jpeg": "/Simfin_capitals/static/media/equity.3ef767f488028e14d8e5.jpeg",
+    "static/media/company-icon.png": "/Simfin_capitals/static/media/company-icon.dec0d7679d13d362b13a.png",
+    "static/media/logo.svg": "/Simfin_capitals/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Simfin_capitals/index.html",
+    "main.e9e64655.css.map": "/Simfin_capitals/static/css/main.e9e64655.css.map",
+    "main.b91fe5f7.js.map": "/Simfin_capitals/static/js/main.b91fe5f7.js.map",
+    "453.ad6eb26e.chunk.js.map": "/Simfin_capitals/static/js/453.ad6eb26e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e9e64655.css",
+    "static/js/main.b91fe5f7.js"
+  ]
+}

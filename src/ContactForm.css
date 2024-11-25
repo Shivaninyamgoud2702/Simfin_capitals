@@ -1,0 +1,131 @@
+/* Container for the form with 60% width and light transparent background */
+.contact-form-container {
+    width: 30%;
+    background-color: rgba(244, 241, 250, 0.9); /* Light transparent #f4f1fa */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-in-out;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Title Styling */
+.contact-form-container h2 {
+    text-align: center;
+    color: #5f4b8b; /* Purple shade */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Styling the form inputs */
+.contact-form-container input,
+.contact-form-container textarea,
+.contact-form-container button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* Focus effect */
+.contact-form-container input:focus,
+.contact-form-container textarea:focus {
+    outline: none;
+    border-color: #5f4b8b; /* Purple shade */
+    box-shadow: 0 0 5px rgba(95, 75, 139, 0.5);
+}
+
+/* Styling for the textarea */
+.contact-form-container textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Button Styling */
+.contact-form-container button {
+    background-color: #5f4b8b; /* Purple background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.contact-form-container button:hover {
+    background-color: #3e2a59; /* Darker purple on hover */
+    transform: translateY(-3px);
+}
+
+/* Success/Failure status message */
+.contact-form-container p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #4caf50; /* Success green */
+    margin-top: 20px;
+}
+
+.contact-form-container p.failed {
+    color: #f44336; /* Failure red */
+}
+
+/* Animation for fading in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries for responsiveness */
+
+/* For screens smaller than 1024px (tablets and below) */
+@media (max-width: 1024px) {
+    .contact-form-container {
+        width: 70%;
+    }
+}
+
+/* For screens smaller than 768px (mobile devices) */
+@media (max-width: 768px) {
+    .contact-form-container {
+        width: 70%;
+        padding: 20px;
+    }
+
+    .contact-form-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-form-container input,
+    .contact-form-container textarea,
+    .contact-form-container button {
+        padding: 10px;
+    }
+}
+
+/* For screens smaller than 480px (small mobile devices) */
+@media (max-width: 480px) {
+    .contact-form-container {
+        width: 70%;
+        padding: 15px;
+    }
+
+    .contact-form-container h2 {
+        font-size: 1.2rem;
+    }
+
+    .contact-form-container input,
+    .contact-form-container textarea,
+    .contact-form-container button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}

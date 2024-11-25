@@ -1,0 +1,134 @@
+.sip-calculator {
+  width: 90%;
+  max-width: 600px; /* Limits the width on larger screens */
+  padding: 30px;
+  border-radius: 8px;
+  background-color: #f4f1fa;
+  color: #4a4a68;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.sip-calculator-wrapper {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.sip-calculator-title {
+  font-size: 40px;
+  color: #4a3f73;
+  margin-top: 20px;
+  font-weight: 900;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sip-calculator-divider {
+  width: 40%;
+  margin: 0 auto 10px auto;
+  border-top: 3px solid #7464b5;
+  margin-bottom: 25px;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.slider-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+.slider-label input[type="number"] {
+  width: 80px;
+  text-align: center;
+  font-size: 16px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+.chart-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Allows charts to stack on smaller screens */
+}
+
+.chart {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.chart canvas {
+  width: 130px; /* Adjust size for smaller screens */
+  height: 130px;
+}
+
+.chart-label {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.investment-details {
+  display: flex;
+  flex-direction: column; /* Stack details on small screens */
+  justify-content: center;
+  width: 90%;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #4a3f73;
+  text-align: center;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .sip-calculator-title {
+    font-size: 28px;
+  }
+
+  .chart canvas {
+    width: 100px;
+    height: 100px;
+  }
+
+  .investment-details {
+    flex-direction: column; /* Stack items */
+    align-items: center;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sip-calculator-title {
+    font-size: 24px;
+  }
+
+  .slider-label {
+    font-size: 14px;
+  }
+
+  .chart canvas {
+    width: 80px;
+    height: 80px;
+  }
+
+  .investment-details {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,184 @@
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(90deg, #1c1b29, #2a2847);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    transition: top 0.3s ease;
+}
+
+/* Company name and icon */
+.navbar-left .company-name {
+    color: #d4d4ff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    background: linear-gradient(90deg, #6c63ff, #492366, #5d5da3);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.4s ease;
+}
+
+.navbar-left .company-name:hover {
+    color: #e5e5e5;
+    background: none;
+    cursor: pointer;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Styling for the company icon */
+.company-icon {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Icon hover effect */
+.company-name:hover .company-icon {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+/* Default navbar link style */
+.navbar-right .navbar-link {
+    color: #e5e5e5;
+    text-decoration: none;
+    padding-right: 1rem;
+    margin-left: 2rem;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Active link style for "Our Team" */
+.navbar-right .navbar-link.active {
+    color: #c0aaff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1000;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* Hamburger menu for mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #c0aaff;
+    transition: all 0.3s ease;
+}
+
+/* Side navigation */
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #2a2847;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    padding-top: 2rem;
+    z-index: 999;
+}
+
+.side-nav.open {
+    transform: translateX(0);
+}
+
+.side-nav .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.side-nav-link {
+    display: block;
+    color: #e5e5e5;
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.side-nav-link:hover {
+    color: #c0aaff;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .navbar-right .navbar-link {
+        display: none; /* Hide regular links on mobile */
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger menu */
+    }
+}
+
+/* Media query for 320px width */
+@media (max-width: 320px) {
+    /* Center the .navbar-left content */
+    .navbar-left {
+        display: flex;
+        flex-direction: row; /* Align icon and text in a row */
+        justify-content: center; /* Center icon and text horizontally */
+        align-items: center; /* Center items vertically */
+        width: 100%; /* Use full width */
+        gap: 5px; /* Add gap between icon and text */
+        padding-top: 5px;
+    }
+
+    /* Increase company icon size */
+    .company-icon {
+        height: 50px;
+        width: auto;
+    }
+
+    /* Center and adjust spacing for company name */
+    .company-name {
+        color: #d4d4ff;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 0; /* Remove padding */
+    }
+
+    /* Adjust the hamburger menu */
+    .navbar-right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        right: 10px;
+        top: 15px; /* Adjust top value to position the hamburger icon properly */
+    }
+
+    .hamburger {
+        display: flex; /* Ensure it shows on mobile */
+        
+    }
+}

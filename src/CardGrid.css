@@ -1,0 +1,46 @@
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+
+.divider {
+  width: 50%;
+  margin: 0 auto 10px auto;
+  border-top: 3px solid #7464b5;
+  margin-bottom: 25px;
+}
+
+.services-title {
+  font-size: 50px;
+  color: #4a3f73;
+  margin-top: 20px;
+  font-weight: 900;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Responsive adjustments for better spacing */
+@media (max-width: 1200px) {
+  .card-grid {
+      padding: 20px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 20px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-grid {
+      grid-template-columns: 1fr;
+      padding: 10px;
+  }
+}

@@ -1,0 +1,76 @@
+/* Card container styling */
+.custom-card {
+    position: relative;
+    background: #f0f5ff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.4s ease;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Image styling */
+.custom-card-image {
+    width: 100%;
+    height: 180px; /* Set a consistent height */
+    object-fit: contain; /* Keeps the entire image within the container without cropping */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #f0f5ff; /* Optional: Add a background color if the image doesn't fully cover */
+    transition: transform 0.4s ease;
+}
+
+.custom-card:hover .custom-card-image {
+    transform: scale(1.1); /* Optional zoom effect on hover */
+}
+
+/* Text content styling */
+.custom-card-content {
+    padding: 1.5rem;
+    background-color: #fff;
+    text-align: center;
+    color: #333;
+    flex-grow: 1;
+}
+
+.custom-card-title {
+    font-size: 1.5rem;
+    color: #3f51b5;
+    margin: 0.5rem 0;
+}
+
+.custom-card-text {
+    color: #555;
+}
+
+/* Border transition on hover */
+.custom-card:hover {
+    border: 2px solid transparent;
+    background-image: linear-gradient(white, white), linear-gradient(45deg, #001f3f 0%, #ffffff 30%, #000000 60%, #6a0dad 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+}
